@@ -55,15 +55,13 @@ const Navbar = () => {
             <li className="text-xl w-full my-2">
               <AiOutlineClose onClick={() => setToggleMenu(false)} />
             </li>
-            {["Market", "Exchange", "Tutorials", "Wallets"].map(
-              (item, index) => (
-                <NavbarItem
-                  key={item + index}
-                  title={item}
-                  classProps="my-2 text-lg"
-                />
-              )
-            )}
+            {["Market", "Exchange", "Wallets"].map((item, index) => (
+              <NavbarItem
+                key={item + index}
+                title={item}
+                classProps="my-2 text-lg"
+              />
+            ))}
           </ul>
         )}
       </div>
